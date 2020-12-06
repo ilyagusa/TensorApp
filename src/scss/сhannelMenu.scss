@@ -1,5 +1,6 @@
 .menu-sidebar {
-  /*margin-top: 10px;*/
+  margin-top: 10px;
+  margin-right: 10px;
   width: 220px;
 }
 
@@ -10,8 +11,8 @@
   &-avatar {
     content: "";
     display: inline-block;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background-color: #bfbfbf;
     border-radius: 50%;
     margin-right: 6px;
@@ -23,6 +24,7 @@
   }
   &-item {
     padding: 4px 8px;
+    height: 100px;
     display: flex;
     align-items: center;
     border-radius: 4px;
@@ -32,7 +34,7 @@
     font-weight: normal;
     font-size: 14px;
     &.active {
-      background-color: greenyellow;
+      background-color: #dddddd;
     }
   }
 }

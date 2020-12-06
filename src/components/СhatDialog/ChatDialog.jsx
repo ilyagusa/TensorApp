@@ -75,22 +75,25 @@ export default class ChatDialog extends Component {
                             if (message.format == "Mem") {
                                 return <span class="chat__dialog-message">
                                     <img class="user-image"
-                                        src={message.format}
+                                        src={message.type}
                                         alt={message.type_news} />
+                                        <p class="chat__dialog-message-text dialog-text-settings message-text">{message.format}</p>
                                     <span class="chat__dialog-message-fill">
-                                        <img class="message-image"
+                                        <a href={message.url} target="_blank" ><img class="message-image"
                                             src={message.url}
-                                            alt={message.type} />
+                                            alt={message.format} />                                    
+                                        </a>
                                     </span>
                                 </span>
                             }
                             else if (message.format == "Video") {
                                 return <span class="chat__dialog-message">
                                     <img class="user-image"
-                                        src={message.format}
+                                        src={message.type}
                                         alt={message.type_news} />
+                                        <p class="chat__dialog-message-text dialog-text-settings message-text">{message.format}</p>
                                     <span class="chat__dialog-message-fill">
-                                        <ReactPlayer controls="true" url={message.url} />
+                                        <ReactPlayer class="message-video" controls="true" height="200px" width="350px" url={message.url} />
                                     </span>
                                 </span>
                             }
