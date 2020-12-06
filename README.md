@@ -80,5 +80,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### `npm run start-api`
-In the file "package.json" need to change the path to the file flask.exe
+In the file "package.json" need to change the path to the file flask.exe .
 This command enables the flask server
