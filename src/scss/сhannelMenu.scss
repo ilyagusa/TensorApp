@@ -1,0 +1,49 @@
+.menu-sidebar {
+    /*margin-top: 10px;*/
+    width: 220px;
+}
+
+.common__channel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-avatar{
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: #BFBFBF;
+        border-radius: 50%;
+        margin-right: 6px;
+        margin-left: 6px;
+        vertical-align: middle;
+    }
+    &-text{
+        font-size: 18px;
+    }
+    &-item{
+        padding: 4px 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #595959;
+        line-height: 22px;
+        font-weight: normal;
+        font-size: 14px;
+        &.active {
+            background-color: greenyellow; 
+        }
+    }
+}
+
+
+.channel-title {
+    color: #262626;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 10px;
+    margin-bottom: 4px;
+    margin-top: 0;
+}

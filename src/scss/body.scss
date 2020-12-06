@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    font-family: sans-serif;
+    padding-top: 25px;
+    max-width: 1440px;
+}
+
+.container{
+    max-width: 1440px;
+    /* margin: 10px; */
+    /*margin-right: 10px;*/
+    margin-top: 18px;
+    display: flex;
+    /* justify-content: space-between; */
+}
