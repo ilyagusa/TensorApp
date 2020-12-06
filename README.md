@@ -92,4 +92,6 @@ This command enables the flask server
 - Роза-робот - `https://sun9-7.userapi.com/impg/gPE1LEUjvrU-YLiGTWRSC8-c_6-AM-lX5AwQ8g/Xo4AP8Btd40.jpg?size=700x700&quality=96&proxy=1&sign=54fd5c2fa46dcbc63343f45c00bf982b&type=album`
 - Марк Багдасаров - `https://sun9-46.userapi.com/impg/DxyuDuQ_tB9qAmdz7cVLNnT3ZKuyzOT2kVU4mw/aGmeF-Bqfz0.jpg?size=700x700&quality=96&proxy=1&sign=1518007cd26ce8dd6f30edf26ba11ef0&type=album`
 
-# Текст сообщений представлен, как {message.format} (Предложение. ввести в бд свойство с текстом сообщения к каждой позиции)
+# Текст сообщений представлен, как {message.format}
+
+(Предложение. ввести в бд свойство с текстом сообщения к каждой позиции)
