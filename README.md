@@ -69,16 +69,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
 ### API
 
 ### `activate venv and install requirements`
-* `cd api`
-* `python -m venv venv`
-* `venv\Scripts\activate`
-* `pip install -r requirements.txt`
 
+- `cd api`
+- `python -m venv venv`
+- `venv\Scripts\activate`
+- `pip install -r requirements.txt`
 
 ### `npm run start-api`
+
 In the file "package.json" need to change the path to the file flask.exe .
 This command enables the flask server
+
+### Kon
+
+# type - Ссылка на аватарку
+
+- Инженер - `https://sun9-14.userapi.com/impg/1fKSdBpqngBA_NytCXOdiHOGLwzgjnNEoEoEhg/QBIMczy91w0.jpg?size=700x700&quality=96&proxy=1&sign=b9fdfddb2a64686ba03d1a844cb6d522&type=album`
+- Гвидон Вишневский - `https://sun9-25.userapi.com/impg/0TFzhC0aJ_n0oYIyzfh-U7X_Vu3ykwL-Gyzm9g/dV9sWGR-9ew.jpg?size=500x500&quality=96&proxy=1&sign=6f1042fc3e19329b553aa88762e64f4e&type=album`
+- Роза-робот - `https://sun9-7.userapi.com/impg/gPE1LEUjvrU-YLiGTWRSC8-c_6-AM-lX5AwQ8g/Xo4AP8Btd40.jpg?size=700x700&quality=96&proxy=1&sign=54fd5c2fa46dcbc63343f45c00bf982b&type=album`
+- Марк Багдасаров - `https://sun9-46.userapi.com/impg/DxyuDuQ_tB9qAmdz7cVLNnT3ZKuyzOT2kVU4mw/aGmeF-Bqfz0.jpg?size=700x700&quality=96&proxy=1&sign=1518007cd26ce8dd6f30edf26ba11ef0&type=album`
+
+# Текст сообщений представлен, как {message.format} (Предложение. ввести в бд свойство с текстом сообщения к каждой позиции)
