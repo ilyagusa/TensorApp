@@ -1,6 +1,7 @@
 import { Component, React } from 'react';
 import ChatButton from './ChatButton';
 import ChatField from './ChatFIeld';
+import ReactPlayer from 'react-player'
 
 export default class ChatDialog extends Component {
     constructor(prpos) {
@@ -70,22 +71,33 @@ export default class ChatDialog extends Component {
                 <div className="chat__dialog">
                     <ChatField />
                     <ul>
-                        {items.map(message => (
-                            <span class="chat__dialog-message">
-                                <img class="user-image"
-                                    src={message.format}
-                                    alt={message.type_news} />
-
-                                <span class="chat__dialog-message-fill">
-                                    <img class="message-image"
-                                        src={message.src_image}
-                                        alt={message.name} />
+                        {items.map(message => {
+                            if (message.format == "Mem") {
+                                return <span class="chat__dialog-message">
+                                    <img class="user-image"
+                                        src={message.format}
+                                        alt={message.type_news} />
+                                    <span class="chat__dialog-message-fill">
+                                        <img class="message-image"
+                                            src={message.url}
+                                            alt={message.type} />
+                                    </span>
                                 </span>
-                            </span>
-                        ))}
+                            }
+                            else if (message.format == "Video") {
+                                return <span class="chat__dialog-message">
+                                    <img class="user-image"
+                                        src={message.format}
+                                        alt={message.type_news} />
+                                    <span class="chat__dialog-message-fill">
+                                        <ReactPlayer controls="true" url={message.url} />
+                                    </span>
+                                </span>
+                            }
+                        })}
                     </ul>
                     <ChatButton gettingMessages={this.gettingMessages} />
-                </div>
+                </div >
             )
         }
     }

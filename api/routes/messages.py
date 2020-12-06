@@ -8,16 +8,16 @@ messages = Blueprint('messages', __name__)
 
 @messages.route('/data')
 def get_data():
-    data_messages = list(mongo.db.messages.find({"format":"image"}))
+    data_messages = list(mongo.db.messages.find())
     return json.dumps(data_messages,default=json_util.default)
 
 @messages.route('/get_message')
 def insert_in_message():
-    data_news = list(mongo.db.news.find({"format":"image"}))
+    data_news = list(mongo.db.post.find())
     random_arr = random.sample(data_news,1)
     random_data = random_arr[0]
     collection_messages = mongo.db.messages
-    data_messages = list(collection_messages.find({"format":"image"}))
+    data_messages = list(collection_messages.find())
 
     while random_data in data_messages:
         if len(data_news) <= 1:
@@ -29,5 +29,5 @@ def insert_in_message():
             random_data = random_arr[0]
 
     collection_messages.insert_one(random_data)
-    data_messages = list(collection_messages.find({"format":"image"}))
+    data_messages = list(collection_messages.find())
     return json.dumps(data_messages,default=json_util.default)
