@@ -2,7 +2,7 @@ const content = [
     {   
         name: 'vdrug_bah', 
         type_news: 'memes', 
-        format: 'img/Rectangle 1.png', 
+        format: 'https://sun9-3.userapi.com/impg/nHQ5MflyRDlYqaxIRJgl1Qeo_avFISz9tEMYdQ/DoZik_9UJqo.jpg?size=724x633&quality=96&proxy=1&sign=6a063ed5359e52abe28bc2743439667c', 
         image: 'https://sun9-3.userapi.com/impg/nHQ5MflyRDlYqaxIRJgl1Qeo_avFISz9tEMYdQ/DoZik_9UJqo.jpg?size=724x633&quality=96&proxy=1&sign=6a063ed5359e52abe28bc2743439667c'
     },
     { 
