@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-api": "cd api && C:/Labs/TensorApp/api/venv/Scripts/flask.exe run",
+    "start-api": "cd api && E:/TensorApp/api/venv/Scripts/flask.exe run",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

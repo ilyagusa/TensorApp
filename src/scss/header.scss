@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 1480px;
+  width: 100%;
   z-index: 99;
   &__block {
     display: flex;
@@ -14,7 +14,7 @@
     margin: auto;
   }
   &__title {
-    max-width: 1200px;
+    max-width: auto;
     margin-left: 50px;
     display: flex;
     align-items: center;
