@@ -1,6 +1,5 @@
 import { Component, React } from 'react';
 import ChatButton from './ChatButton';
-import ChatField from './ChatFIeld';
 import ReactPlayer from 'react-player'
 
 export default class ChatDialog extends Component {
@@ -78,36 +77,38 @@ export default class ChatDialog extends Component {
         else {
             return (
                 <div className="chat__dialog">
-                    <ChatField />
-                    <ul>
-                        {items.map(message => {
-                            if (message.format == "Mem") {
-                                return <span class="chat__dialog-message">
-                                    <img class="user-image"
-                                        src={avatars.get(message.type)}
-                                        alt={message.type_news} />
-                                    <p class="chat__dialog-message-text dialog-text-settings message-text">{avatar_name.get(message.type)}</p>
-                                    <span class="chat__dialog-message-fill">
-                                        <a href={message.url} target="_blank" ><img class="message-image"
-                                            src={message.url}
-                                            alt={message.format} />
-                                        </a>
+                    <div class="chat__dialog-container">
+                        <div class="chat__dialog-messages">
+                            {items.map(message => {
+                                if (message.format == "Mem") {
+                                    return <span class="chat__dialog-message">
+                                        <img class="user-image"
+                                            src={avatars.get(message.type)}
+                                            alt={message.type_news} />
+                                        <p class="chat__dialog-message-text dialog-text-settings message-text">{avatar_name.get(message.type)}</p>
+                                        <span class="chat__dialog-message-fill">
+                                            <a href={message.url} target="_blank" ><img class="message-image"
+                                                src={message.url}
+                                                alt={message.format} />
+                                            </a>
+                                        </span>
                                     </span>
-                                </span>
-                            }
-                            else if (message.format == "Video") {
-                                return <span class="chat__dialog-message">
-                                    <img class="user-image"
-                                        src={avatars.get(message.type)}
-                                        alt={message.type_news} />
-                                    <p class="chat__dialog-message-text dialog-text-settings message-text">{avatar_name.get(message.type)}</p>
-                                    <span class="chat__dialog-message-fill">
-                                        <ReactPlayer class="message-video" controls="true" height="200px" width="350px" url={message.url} />
+                                }
+                                else if (message.format == "Video") {
+                                    return <span class="chat__dialog-message">
+                                        <img class="user-image"
+                                            src={avatars.get(message.type)}
+                                            alt={message.type_news} />
+                                        <p class="chat__dialog-message-text dialog-text-settings message-text">{avatar_name.get(message.type)}</p>
+                                        <span class="chat__dialog-message-fill">
+                                            <ReactPlayer class="message-video" controls="true" height="200px" width="350px" url={message.url} />
+                                        </span>
                                     </span>
-                                </span>
-                            }
-                        })}
-                    </ul>
+                                }
+                            })}
+                        </div>
+                    </div>
+                        
                     <ChatButton gettingMessages={this.gettingMessages} />
                 </div >
             )
