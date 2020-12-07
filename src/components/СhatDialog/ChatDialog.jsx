@@ -41,11 +41,10 @@ export default class ChatDialog extends Component {
             .then(res => res.json())
             .then(
                 (result) => {
-                    const copy = this.state.items
-                    copy.push(result[result.length - 1])
+                    console.log(result)
                     this.setState({
                         isLoaded: true,
-                        items: copy
+                        items: result
                     });
                 },
                 (error) => {

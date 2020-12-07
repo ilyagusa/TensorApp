@@ -13,12 +13,15 @@ def get_data():
 
 @messages.route('/get_message')
 def insert_in_message():
+    # коллекция post является базой данных для всех имеющихся постов
     data_news = list(mongo.db.post.find())
     random_arr = random.sample(data_news,1)
     random_data = random_arr[0]
     collection_messages = mongo.db.messages
     data_messages = list(collection_messages.find())
 
+    #если рандомный пост из коллекции всех постов уже содержится в истории сообщений, удаляем из локальной копии массива
+    #этот пост и заново рандомно выбираем другой пост до тех пор, пока его не окжается в истории переписки
     while random_data in data_messages:
         if len(data_news) <= 1:
             data_messages.append({'format' : 'empty' , 'name' : 'Oops... database empty'})
@@ -29,5 +32,6 @@ def insert_in_message():
             random_data = random_arr[0]
 
     collection_messages.insert_one(random_data)
+    #создание list из коллекци messages без аргументов в функции find(), т.е переменная содержит все записи из коллекции.
     data_messages = list(collection_messages.find())
     return json.dumps(data_messages,default=json_util.default)
