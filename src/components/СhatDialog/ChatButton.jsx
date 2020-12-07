@@ -8,8 +8,6 @@ export default class ChatButton extends Component {
                     <form onSubmit={this.props.gettingMessages}>
                     <button  className="button dialog-text-settings button-text">Хочу мемас</button>
                     </form>
-                    <button className="button dialog-text-settings button-text">Хочу новости</button>
-                    <button className="button dialog-text-settings button-text">Хочу прочее</button>
                 </div>
             </div>
         )

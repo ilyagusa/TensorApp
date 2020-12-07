@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import CommonChannel from './components/ChannelMenu/CommonChannel';
+// import CommonChannel from './components/ChannelMenu/CommonChannel';
+import MenuSidebar from './components/ChannelMenu/MenuSidebar';
 import ChatDialog from './components/СhatDialog/ChatDialog';
 //import ReactDOM from 'react-dom';
 import './reportWebVitals.js'
@@ -21,7 +22,7 @@ export default class App extends Component {
           </div>
         </header>
         <div className="container">
-          <CommonChannel />
+          <MenuSidebar />
           <ChatDialog />
         </div>
       </div>

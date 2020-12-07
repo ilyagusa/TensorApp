@@ -7,7 +7,7 @@ export default class CommonChannel extends Component {
             <nav className="common__channel">
                 <a href="#" className="common__channel-item active">
                     <img className="common__channel-avatar"/>
-                    <span className="common__channel-text dialog-text-settings">Общий канал</span>
+                    <span className="common__channel-text">Общий канал</span>
                 </a>
             </nav>
         </div>
