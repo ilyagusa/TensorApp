@@ -36,6 +36,10 @@
     line-height: 22px;
     font-weight: normal;
     font-size: 14px;
+    transition: 0.5s linear;
+    &:hover {
+      background-color: #f1f1f1;
+    }
     &.active {
       background-color: #dddddd;
       font-weight: bold;
@@ -60,7 +64,9 @@
   margin-top: 30px;
   margin-bottom: 24px;
 }
-
+.channel__various-title {
+  margin-left: 13px;
+}
 .channel__various-avatar {
   content: "";
   display: inline-block;
@@ -83,8 +89,11 @@
   line-height: 22px;
   font-weight: normal;
   font-size: 14px;
+  transition: 0.5s linear;
 }
-
+.channel__various-item:hover {
+  background-color: #f1f1f1;
+}
 .channel__various-item.active {
   background-color: #dddddd;
   font-weight: bold;
@@ -95,4 +104,12 @@
   font-family: Roboto;
   font-style: normal;
   color: #000000;
+}
+
+.inactive {
+  background-color: rgb(124, 29, 29);
+}
+
+.active {
+  background-color: rgb(38, 121, 89);
 }
