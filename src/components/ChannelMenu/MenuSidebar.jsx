@@ -29,10 +29,10 @@ import { Component, React } from 'react';
         <div class="menu-sidebar">
             <nav class="channel__various-group">
                 <a href="#" className={this.isActiveElement("common")} onClick={() => {this.toggleActive("common")}}>
-                    <img class="channel__various-avatar"/>
+                    <img class="channel__various-avatar" src="https://sun9-49.userapi.com/impg/iOdQs49kTZW2kqsA9F6C_uWVdiAPiFkNSirmGg/L7cOpJ-tIyY.jpg?size=891x682&quality=96&proxy=1&sign=1bb40a360e1977ab81ab1b8090cc24d9&type=album"/>
                     <span class="channel__various-text">Общий канал</span>
                 </a>
-                <h3 class="channel__various-title">Выбери тематику</h3>
+                <h3 class="channel__various-title">Выбери тематику:</h3>
                 <a href="#" className={this.isActiveElement("science")} onClick={() => {this.toggleActive("science")}}> 
                     <img className="channel__various-avatar" src="https://sun9-14.userapi.com/impg/1fKSdBpqngBA_NytCXOdiHOGLwzgjnNEoEoEhg/QBIMczy91w0.jpg?size=700x700&quality=96&proxy=1&sign=b9fdfddb2a64686ba03d1a844cb6d522&type=album"/>
                     <span className="channel__various-text">Наука</span>

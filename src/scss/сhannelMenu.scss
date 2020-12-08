@@ -36,6 +36,10 @@
     line-height: 22px;
     font-weight: normal;
     font-size: 14px;
+    transition: 0.5s linear;
+    &:hover {
+      background-color: #f1f1f1;
+    }
     &.active {
       background-color: #dddddd;
       font-weight: bold;
@@ -58,8 +62,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   margin-top: -10px;
+=======
+  margin-top: 0px;
+>>>>>>> origin/Kon
   margin-bottom: 24px;
+}
+.channel__various-title {
+  color: #262626;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: 7px;
 }
 
 .channel__various-avatar {
@@ -84,8 +102,11 @@
   line-height: 22px;
   font-weight: normal;
   font-size: 14px;
+  transition: 0.5s linear;
 }
-
+.channel__various-item:hover {
+  background-color: #f1f1f1;
+}
 .channel__various-item.active {
   background-color: #dddddd;
   font-weight: bold;
@@ -96,4 +117,12 @@
   font-family: Roboto;
   font-style: normal;
   color: #000000;
+}
+
+.inactive {
+  background-color: rgb(124, 29, 29);
+}
+
+.active {
+  background-color: rgb(38, 121, 89);
 }
