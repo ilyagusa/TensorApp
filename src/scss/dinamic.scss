@@ -1,17 +1,44 @@
-@media (max-width: 840px) {
-  .header__block {
-    display: flex;
-  }
-}
-
-@media (max-width: 1250px) {
-  .header-block {
-    width: 95%;
-  }
-}
-
-@media (max-width: 1920px) {
+@media only screen and (max-width: 2560px) {
   .chat__dialog {
-    height: 300px;
+    height: 900px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .chat__dialog {
+    height: 880px;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .chat__dialog {
+    height: 850px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .chat__dialog {
+    height: 708px;
+  }
+  .button {
+    padding: 10px 240px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .chat__dialog {
+    height: 665px;
+  }
+  .button {
+    padding: 10px 180px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    padding: 10px 150px;
+  }
+  .chat__dialog-message {
+    margin: 10px 15px 20px 3px;
   }
 }

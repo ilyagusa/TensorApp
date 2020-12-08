@@ -8,7 +8,7 @@
   /* height: 100%; */
   position: relative;
   /* margin-bottom: 100px; */
-  height: 854px;
+  height: 860px;
   min-height: 610px;
   width: 100%;
   background-color: #dddddd;
@@ -21,7 +21,7 @@
   background-color: #f9f9f9;
 }
 .chat__dialog::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #529786;
 }
 ::-webkit-scrollbar {
@@ -40,6 +40,7 @@
   font-size: calc(100% + 10px);
   line-height: 30px;
   align-items: center;
+  white-space: nowrap;
   text-align: center;
 }
 
@@ -111,15 +112,19 @@
 
 .button {
   /*left: 20%;*/
+  display: flex;
   max-width: 70%;
   max-height: 80%;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
   border: none;
+
+  justify-content: center;
   border-radius: 20px;
-  /* padding: 10px 32px; */
-  margin: 7px 0px 10px 550px;
+  margin-top: 7px;
+  padding: 10px 320px;
+  // margin: 7px 0px 10px 550px;
   cursor: pointer;
   position: relative;
 }
@@ -135,6 +140,7 @@
 .container__button {
   //position: absolute;
   display: flex;
+  justify-content: center;
   max-height: 100px;
   min-height: 60px;
   bottom: 0;
@@ -149,11 +155,12 @@
   vertical-align: right;
   float: left;
   padding: 0 10px 0 0px;
+  min-width: 450px;
+  min-height: 250px;
   width: 100%;
   height: 100%;
   //margin: 10px 30px 10px 30px;
   margin: 65px -10px 15px 60px;
   border-radius: 5%;
   border: 10px solid #fff;
-  white-space: nowrap;
 }
