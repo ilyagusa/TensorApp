@@ -6,7 +6,7 @@ export default class ChatButton extends Component {
             <div className="container__button">
                 <div className="message-button">
                     <form onSubmit={this.props.gettingMessages}>
-                    <button  className="button dialog-text-settings button-text">Хочу мемас</button>
+                    <button  className="button dialog-text-settings button-text">Хочу постик</button>
                     </form>
                 </div>
             </div>
