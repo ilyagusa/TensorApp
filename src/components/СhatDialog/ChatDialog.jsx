@@ -1,4 +1,5 @@
 import { Component, React } from 'react';
+import { useEffect } from 'react';
 import ChatButton from './ChatButton';
 import ReactPlayer from 'react-player'
 
@@ -9,14 +10,15 @@ export default class ChatDialog extends Component {
             error: null,
             isLoaded: false,
             items: [],
-            active_element : "Common"
         };
     }
 
-
     componentDidMount() {
         //componentDidMount()
-        fetch("/messages/data")
+        let url = "http://localhost:5000/messages/data_"
+        url += this.props.getActiveForChannel()
+        console.log(url)
+        fetch(url)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -35,17 +37,45 @@ export default class ChatDialog extends Component {
             )
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.data !== this.props.data) {
+            let url = "http://localhost:5000/messages/data_"
+            url += this.props.getActiveForChannel()
+            console.log(url)
+            fetch(url)
+                .then(res => res.json())
+                .then(
+                    (result) => {
+                        console.log(result)
+                        this.setState({
+                            isLoaded: true,
+                            items: result
+                        });
+                    },
+                    (error) => {
+                        this.setState({
+                            isLoaded: true,
+                            error
+                        });
+                    }
+                )
+        }
+    }
+
+
     gettingMessages = (e) => {
         e.preventDefault()
-        fetch("/messages/get_message")
+        let url = "http://localhost:5000/messages/get_message_"
+        url += this.props.getActiveForChannel()
+        fetch(url)
             .then(res => res.json())
             .then(
                 (result) => {
-                    const copy = this.state.items
-                    copy.push(result[result.length - 1])
+                    // const copy = this.state.items
+                    // copy.push(result[result.length - 1])
                     this.setState({
                         isLoaded: true,
-                        items: copy
+                        items: result
                     });
                 },
                 (error) => {
@@ -110,7 +140,7 @@ export default class ChatDialog extends Component {
                             })}
                         </div>
                     </div>
-                        
+
                     <ChatButton gettingMessages={this.gettingMessages} />
                 </div >
             )

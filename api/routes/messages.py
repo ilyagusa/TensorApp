@@ -8,13 +8,13 @@ from routes.func_for_route import choice_random_post
 messages = Blueprint('messages', __name__)
 
 
-@messages.route('/data')
+@messages.route('/data_common')
 def get_data():
     data_messages = list(mongo.db.messages.find())
     return json.dumps(data_messages, default=json_util.default)
 
 
-@messages.route('/get_message')
+@messages.route('/get_message_common')
 def insert_in_message():
     # коллекция post является базой данных для всех имеющихся постов
     data_news = list(mongo.db.post.find())

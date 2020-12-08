@@ -13,6 +13,7 @@ import { Component, React } from 'react';
 
     toggleActive(key) {
         this.setState({activeElement: key})
+        this.props.getActiveElement(key)
         console.log(key)
     }
 
