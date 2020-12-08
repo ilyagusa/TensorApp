@@ -15,7 +15,7 @@ export default class ChatDialog extends Component {
 
     componentDidMount() {
         //componentDidMount()
-        fetch("http://localhost:5000/messages/data")
+        fetch("/messages/data")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -36,7 +36,7 @@ export default class ChatDialog extends Component {
 
     gettingMessages = (e) => {
         e.preventDefault()
-        fetch("http://localhost:5000/messages/get_message")
+        fetch("/messages/get_message")
             .then(res => res.json())
             .then(
                 (result) => {
