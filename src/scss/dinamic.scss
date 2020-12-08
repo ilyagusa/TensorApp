@@ -9,3 +9,9 @@
     width: 95%;
   }
 }
+
+@media (max-width: 1920px) {
+  .chat__dialog {
+    height: 300px;
+  }
+}
