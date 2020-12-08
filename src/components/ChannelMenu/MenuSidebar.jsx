@@ -7,7 +7,7 @@ import { Component, React } from 'react';
         super(props)
 
         this.state = {
-            activeElement: null
+            activeElement: "common"
         }
     }
 

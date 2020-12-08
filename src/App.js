@@ -6,6 +6,10 @@ import ChatDialog from './components/СhatDialog/ChatDialog';
 import './reportWebVitals.js'
 
 export default class App extends Component {
+
+
+
+  
   render() {
     return (
       <div>

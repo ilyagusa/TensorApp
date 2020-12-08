@@ -8,7 +8,8 @@ export default class ChatDialog extends Component {
         this.state = {
             error: null,
             isLoaded: false,
-            items: []
+            items: [],
+            active_element : "Common"
         };
     }
 
@@ -40,10 +41,11 @@ export default class ChatDialog extends Component {
             .then(res => res.json())
             .then(
                 (result) => {
-                    console.log(result)
+                    const copy = this.state.items
+                    copy.push(result[result.length - 1])
                     this.setState({
                         isLoaded: true,
-                        items: result
+                        items: copy
                     });
                 },
                 (error) => {
