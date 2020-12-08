@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import './scss/body.scss'
 import './scss/header.scss'
-import './scss/dinamic.scss'
 import './scss/сhannelMenu.scss'
 import './scss/chatDialog.scss'
+import './scss/dinamic.scss'
 import App from './App';
 
 ReactDOM.render(
