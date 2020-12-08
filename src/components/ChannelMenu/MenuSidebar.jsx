@@ -26,6 +26,7 @@ import { Component, React } from 'react';
 
     render() {
      return(
+         
         <div class="menu-sidebar">
             <nav class="channel__various-group">
                 <a href="#" className={this.isActiveElement("common")} onClick={() => {this.toggleActive("common")}}>

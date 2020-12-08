@@ -1,7 +1,9 @@
 .menu-sidebar {
   margin-top: 10px;
   margin-right: 10px;
-  width: 220px;
+  margin-left: 5px;
+  min-width: 190px;
+  width: 190px;
 }
 
 .common__channel {
@@ -112,12 +114,4 @@
   font-family: Roboto;
   font-style: normal;
   color: #000000;
-}
-
-.inactive {
-  background-color: rgb(124, 29, 29);
-}
-
-.active {
-  background-color: rgb(38, 121, 89);
 }
