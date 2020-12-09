@@ -1,44 +1,75 @@
-@media only screen and (max-width: 2560px) {
+@media only screen and (min-width: 2160px) {
   .chat__dialog {
-    height: 900px;
+    height: 90vh;
+  }
+  .button {
+    height: 5vh;
+    padding: 5px 350px;
+    margin-top: 14px;
+  }
+  .loading-text {
+    font-size: 60px;
+    margin: 500px auto;
   }
 }
-
-@media only screen and (max-width: 1920px) {
-  .chat__dialog {
-    height: 880px;
-  }
-}
-
-@media only screen and (max-width: 1680px) {
-  .chat__dialog {
-    height: 850px;
-  }
-}
-
 @media only screen and (max-width: 1440px) {
-  .chat__dialog {
-    height: 708px;
-  }
   .button {
     padding: 10px 240px;
   }
 }
-
+@media only screen and (max-width: 1280px) {
+  .chat__dialog {
+    height: 88.7vh;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .chat__dialog {
-    height: 665px;
+    height: 87.4vh;
   }
   .button {
-    padding: 10px 180px;
+    height: 5vh;
+    padding: 5px 180px;
+  }
+  .loading-text {
+    font-size: 45px;
+    margin: 300px auto;
+  }
+}
+@media only screen and (height: 1366px) {
+  @media only screen and (max-width: 1024px) {
+    .chat__dialog {
+      height: 89.7vh;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .button {
+    padding: 10px 150px;
+    margin-right: 100px;
+  }
+  .chat__dialog {
+    height: 86vh;
+  }
+  .chat__dialog-message {
+    margin: 10px 15px 20px 3px;
+  }
+  .button-text {
+    font-size: 18px;
+  }
+  .loading-text {
+    font-size: 35px;
+    margin: 200px auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .button {
-    padding: 10px 150px;
+  .chat__dialog {
+    height: 88.7vh;
   }
-  .chat__dialog-message {
-    margin: 10px 15px 20px 3px;
+  .button-text {
+    font-size: 22px;
+  }
+  .button {
+    margin-top: 10px;
   }
 }

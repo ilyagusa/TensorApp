@@ -104,7 +104,7 @@ export default class ChatDialog extends Component {
             return <p>error</p>
         }
         else if (!isLoaded) {
-            return <p>Loading...</p>
+            return <p className="loading-text">Loading...</p>
         }
         else {
             return (
