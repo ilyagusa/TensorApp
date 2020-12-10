@@ -109,7 +109,7 @@ export default class ChatDialog extends Component {
         }
         else {
             return (
-                <ScrollToBottom sticky="true" className="chat__dialog">
+                <ScrollToBottom sticky="true" scrollViewClassName="chat__dialog" className="chat__dialog">
                     <div class="chat__dialog-container" >
                         <div class="chat__dialog-messages">
                             {items.map(message => {

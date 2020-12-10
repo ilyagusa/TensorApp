@@ -31,7 +31,7 @@ import { Component, React } from 'react';
         <div class="menu-sidebar">
             <nav class="channel__various-group">
                 <a href="#" className={this.isActiveElement("common")} onClick={() => {this.toggleActive("common")}}>
-                    <img class="channel__various-avatar" src="https://sun9-49.userapi.com/impg/iOdQs49kTZW2kqsA9F6C_uWVdiAPiFkNSirmGg/L7cOpJ-tIyY.jpg?size=891x682&quality=96&proxy=1&sign=1bb40a360e1977ab81ab1b8090cc24d9&type=album"/>
+                    <img class="channel__various-avatar" src="https://sun9-7.userapi.com/impg/Xg_vq4iufdYM59jiXo9A34IxqJVe6AEcznQLCg/DMDu5JUMa4I.jpg?size=250x250&quality=96&proxy=1&sign=8d1e174b20354f84012482b826cb9c05&type=album"/>
                     <span class="channel__various-text">Общий канал</span>
                 </a>
                 <h3 class="channel__various-title">Выбери тематику:</h3>

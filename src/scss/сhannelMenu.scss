@@ -49,70 +49,68 @@
   }
 }
 
-.channel__various-title {
-  color: #262626;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  margin-left: 7px;
-}
-
-.channel__various-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 24px;
-}
-.channel__various-title {
-  color: #262626;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  margin-left: 7px;
-}
-
-.channel__various-avatar {
-  content: "";
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  background-color: #bfbfbf;
-  border-radius: 50%;
-  margin-right: 6px;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-
-.channel__various-item {
-  padding: 4px 8px;
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #595959;
-  line-height: 22px;
-  font-weight: normal;
-  font-size: 14px;
-  transition: 0.5s linear;
-}
-.channel__various-item:hover {
-  background-color: #f1f1f1;
-}
-.channel__various-item.active {
-  background-color: #dddddd;
-  font-weight: bold;
-}
-
-.channel__various-text {
-  font-size: 18px;
-  font-family: Roboto;
-  font-style: normal;
-  color: #000000;
+.channel__various {
+  &-title {
+    color: #262626;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 7px;
+  }
+  &-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 24px;
+  }
+  &-title {
+    color: #262626;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 7px;
+  }
+  &-avatar {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  &-item {
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #595959;
+    line-height: 22px;
+    font-weight: normal;
+    font-size: 14px;
+    transition: 0.5s linear;
+    &:hover {
+      background-color: #f1f1f1;
+    }
+    &.active {
+      background-color: #dddddd;
+      font-weight: bold;
+    }
+  }
+  &-text {
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    color: #000000;
+  }
 }
