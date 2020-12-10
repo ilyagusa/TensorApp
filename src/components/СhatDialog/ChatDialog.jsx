@@ -1,7 +1,8 @@
 import { Component, React } from 'react';
-import { useEffect } from 'react';
 import ChatButton from './ChatButton';
 import ReactPlayer from 'react-player'
+import ScrollToBottom, { useAtEnd } from 'react-scroll-to-bottom';
+
 
 export default class ChatDialog extends Component {
     constructor(prpos) {
@@ -108,8 +109,8 @@ export default class ChatDialog extends Component {
         }
         else {
             return (
-                <div className="chat__dialog">
-                    <div class="chat__dialog-container">
+                <ScrollToBottom sticky="true" className="chat__dialog">
+                    <div class="chat__dialog-container" >
                         <div class="chat__dialog-messages">
                             {items.map(message => {
                                 if (message.format == "Mem") {
@@ -140,9 +141,8 @@ export default class ChatDialog extends Component {
                             })}
                         </div>
                     </div>
-
                     <ChatButton gettingMessages={this.gettingMessages} />
-                </div >
+                </ScrollToBottom >
             )
         }
     }
